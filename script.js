@@ -26,7 +26,7 @@ function calcChurras(){
    let qntbebidas = Math.ceil(totalpessoas*bebidaspp/2000)
     /* Cálculos feitos, vamos mostrar na tela o resultado! */
    resultado.style.visibility = "visible"
-   if (adultos <= 0 && criancas <= 0){
+   if ((adultos <= 0 && criancas <= 0) || adultos < 0 || criancas < 0){
     alert('Ninguem vai para seu churrasco? Que triste :(')
     resultado.style.visibility = "hidden"
     }
