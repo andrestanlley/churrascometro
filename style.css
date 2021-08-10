@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #834d1b;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: #EECC60;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    height: 100vh;
+    background: white;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+}
+
+header{
+    text-align: center;
+    margin: .5rem;
+    font-size: 1.3rem;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+input{
+    width: 25%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 1rem .5rem;
+    height: 3rem;
+    border-radius: 6px;
+    background: rgba(128, 128, 128, 0.199);
+}
+
+button{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #834d1b;
+    width: 47rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+button > img{
+    width: .7rem;
+    margin-right: .3rem;
+}
+
+.resultado{
+    visibility: hidden;
+    padding: 2rem 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+#mostrar{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#zealmiro{
+    width: 50%;
+}
+
+#zealmiro > img{
+    width: 100%;
+}

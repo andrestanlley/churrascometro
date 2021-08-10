@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="firebutton.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Churrascômetro</h1>
+            <h3>Descubra as quantidades necessárias para um bom churrasco.</h3>
+        </header>
+        <section>
+            <input type="number" placeholder="Adultos" id="adultos">
+            <input type="number" placeholder="Crianças" id="criancas">
+            <input type="number" placeholder="Duração(h)" id="duracao">
+        </section>
+        <button id="botao"><img src="firebutton.png">Calcular</button>
+        <div class="resultado">
+            <div id="mostrar">
+                <h1>São necessarios</h1>
+                <p><strong id="qntcarne"></strong> KG de carne (<strong id="carnepp"></strong>g por pessoa)</p>
+                <p><strong id="qntcerveja"></strong> latas de cerveja (<strong id="cervejapp"></strong>ml por adulto)</p>
+                <p><strong id="qntbebida"></strong> bebidas de 2L (<strong id="bebidapp"></strong>ml por pessoa)</p>
+            </div>
+            <div id="zealmiro">
+                <img src="chiadao.png" alt="Zé Almiro, do canal Churrasqueadas do YouTube.">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
