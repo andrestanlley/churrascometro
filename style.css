@@ -6,6 +6,7 @@
     box-sizing: border-box;
     color: #834d1b;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 body{
@@ -20,7 +21,7 @@ main{
     height: 100vh;
     background: white;
     margin: auto;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.26);
+    box-shadow: 0rem 0rem 0.9375rem rgba(0, 0, 0, 0.26);
 }
 
 header{
@@ -44,7 +45,7 @@ input{
     text-align: center;
     margin: 1rem .5rem;
     height: 3rem;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background: rgba(128, 128, 128, 0.199);
 }
 
@@ -55,7 +56,7 @@ button{
     justify-content: center;
     color: white;
     background: #834d1b;
-    width: 47rem;
+    width: 78.5%;
     height: 2.5rem;
     cursor: pointer;
 }
@@ -88,4 +89,32 @@ button > img{
 
 #zealmiro > img{
     width: 100%;
+}
+
+@media (max-width: 1280px){
+    main{
+        width: 90vw;
+        height: 100%;
+    }
+    input{
+        width: 79.5%;
+    }
+    header{
+        font-size: 1rem;
+    }
+    section{
+        flex-direction: column;
+    }
+    .resultado{
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    #mostrar{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    #zealmiro{
+        width: 100%;
+    }
 }
