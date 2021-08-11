@@ -25,14 +25,12 @@ function calcChurras(){
    let qntcerveja = Math.ceil((adultos*cervejapp)/350)
    let qntbebidas = Math.ceil(totalpessoas*bebidaspp/2000)
     /* Cálculos feitos, vamos mostrar na tela o resultado! */
-   resultado.style.visibility = "visible"
    if ((adultos <= 0 && criancas <= 0) || adultos < 0 || criancas < 0){
     alert('Ninguem vai para seu churrasco? Que triste :(')
-    resultado.style.visibility = "hidden"
-    }
-   if (duracao <= 0){
+    } else if(duracao <= 0){
        alert('Que festa rápida, hein? Informe quantas horas seu churrasco vai durar!')
-       resultado.style.visibility = "hidden"
+   } else {
+    resultado.style.visibility = "visible"
    }
    mostrarcarne.innerText = qntcarne
    mostrarcarnepp.innerText = carnepp
